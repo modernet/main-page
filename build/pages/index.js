@@ -1,12 +1,9 @@
-import React from 'react'
-import Navbar from '../components/Navbar/index';
-import Sidebar from '../components/Sidebar/index';
+import Home from './home';
 
 export default function index() {
   return (
     <div>
-        <Sidebar />
-        <Navbar />
+       <Home />
     </div>
   )
 }

@@ -1,37 +1,38 @@
-import React from 'react'
-import { SidebarContainer, Icon, CloseIcon } from './SidebarElement'
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarLink, SidebarRouter, SidebarMenu, SideBtnWrap } from './SidebarElement';
+import Link from 'next/link';
 
-const Sidebar = () => {
+export default function Sidebar({isOpen, toggle}) {
   return (
     <div>
-        <SidebarContainer>
-            <Icon>
+        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>
             <SidebarWrapper>
               <SidebarMenu>
-                <SidebarLink to="about">
+                <SidebarLink to="about" smooth={true} onClick={toggle}>
                   About
                 </SidebarLink>
-                <SidebarLink to="discover">
+                <SidebarLink to="discover" smooth={true} onClick={toggle}>
                   Discover
                 </SidebarLink>
-                <SidebarLink to="services">
+                <SidebarLink to="services" smooth={true} onClick={toggle}>
                   Services
                 </SidebarLink>
-                <SidebarLink to="signup">
+                <SidebarLink to="signup" smooth={true} onClick={toggle}>
                   Signup
                 </SidebarLink>
               </SidebarMenu>
               <SideBtnWrap>
-                <SidebarRoute>
+              <Link href="/signin" passHref>
+                  <SidebarRouter>
                   Sign In
-                </SidebarRoute>
+                  </SidebarRouter>
+              </Link>
               </SideBtnWrap>
+             
             </SidebarWrapper>
         </SidebarContainer>
     </div>
   )
 }
-
-export default Sidebar

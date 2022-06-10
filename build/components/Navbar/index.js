@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {FaBars} from 'react-icons/fa';
 
 
-export default function index() {
+export default function index({toggle}) {
   return (
     <>
       <Nav>
@@ -13,7 +13,7 @@ export default function index() {
             dolla
             </NavLogo>
           </Link>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
             <NavMenu>
@@ -38,11 +38,13 @@ export default function index() {
                 </NavLinks>
               </NavItem>
             </NavMenu>
-            <Link href="/signin" passHref>
+            
             <NavBtn>
+            <Link href="/signin" passHref>
                 <NavBtnLink>Sign in</NavBtnLink>
-            </NavBtn>
             </Link>
+            </NavBtn>
+           
         </NavbarContainer>
       </Nav>
     </>

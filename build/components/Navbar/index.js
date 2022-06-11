@@ -22,11 +22,11 @@ export default function index({toggle}) {
                   About
                 </NavLinks>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks to="discover" smooth={true}>
                   Discover
                 </NavLinks>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLinks to="services" smooth={true}>
                   Services

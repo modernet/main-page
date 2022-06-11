@@ -2,35 +2,41 @@ import React from 'react'
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap } from './InfoElement'
 import {Button} from '../ButtonElement';
 
-export default function InfoSection() {
+export default function InfoSection({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) {
   return (
     <>
-        <InfoContainer>
+        <InfoContainer lightBg={lightBg} id={id}>
             <InfoWrapper>
-                <InfoRow>
+                <InfoRow imgStart={imgStart}>
                     <Column1>
                         <TextWrapper>
                             <TopLine>
-                                TopLine
+                                {topLine}
                             </TopLine>
-                            <Heading>
-                                Heading
+                            <Heading lightText={lightText}>
+                                {headline}
                             </Heading>
-                            <Subtitle>
-                                Subtitle
+                            <Subtitle darkText={darkText}>
+                                {description}
                             </Subtitle>
                             <BtnWrap>
-                                <Button to='home' smooth={true}>
-                                    Get Started
+                                <Button to='home' 
+                                smooth={true} 
+                                primary={primary.toString()}
+                                dark={dark.toString()}
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                                >
+                                    {buttonLabel}
                                 </Button>
                             </BtnWrap>
                         </TextWrapper>
                     </Column1>
                     <Column2>
                     <ImgWrap>
-                    <Img>
-
-                    </Img>
+                    <Img src={img} alt={alt} />
                     </ImgWrap>
                     </Column2>
                 </InfoRow>

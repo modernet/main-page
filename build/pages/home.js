@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import HeroSection from '../components/HeroSection';
+import InfoSection from '../components/InfoSection';
 import Navbar from '../components/Navbar/index';
 import Sidebar from '../components/Sidebar/index';
 
@@ -12,9 +13,10 @@ export default function Home() {
 
   return (
     <>
-        <Sidebar isOpen={isOpen} toggle={toggle}/>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
         <Navbar toggle={toggle}/>
         <HeroSection />
+        <InfoSection />
     </>
   )
 }

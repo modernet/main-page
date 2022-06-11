@@ -13,9 +13,6 @@ export default function Sidebar({isOpen, toggle}) {
                 <SidebarLink to="about" smooth={true} onClick={toggle}>
                   About
                 </SidebarLink>
-                <SidebarLink to="discover" smooth={true} onClick={toggle}>
-                  Discover
-                </SidebarLink>
                 <SidebarLink to="services" smooth={true} onClick={toggle}>
                   Services
                 </SidebarLink>

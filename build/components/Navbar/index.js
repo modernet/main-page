@@ -33,8 +33,8 @@ export default function index({toggle}) {
                 </NavLinks>
                 </NavItem>
                 <NavItem>
-                <NavLinks to="signup" smooth={true}>
-                  Sign Up
+                <NavLinks to="ecommerce" smooth={true}>
+                  Ecommerce
                 </NavLinks>
               </NavItem>
             </NavMenu>

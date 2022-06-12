@@ -16,8 +16,8 @@ export default function Sidebar({isOpen, toggle}) {
                 <SidebarLink to="services" smooth={true} onClick={toggle}>
                   Services
                 </SidebarLink>
-                <SidebarLink to="signup" smooth={true} onClick={toggle}>
-                  Signup
+                <SidebarLink to="ecommerce" smooth={true} onClick={toggle}>
+                  Ecommerce
                 </SidebarLink>
               </SidebarMenu>
               <SideBtnWrap>

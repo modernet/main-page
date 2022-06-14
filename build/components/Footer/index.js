@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink } from './FooterElement';
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, SocialIconLink, SocialIcons, WebsiteRights} from './FooterElement';
+import {FaFacebook, FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -85,7 +86,7 @@ export default function Footer() {
                         </SocialLogo>
                         </Link>
                         <WebsiteRights>
-                            dolla &copy{new Date().getFullYear()} All Rights Reserved.
+                            Modernet &#169;{new Date().getFullYear()} All Rights Reserved.
                         </WebsiteRights>
                         <SocialIcons>
                             <Link href="/">

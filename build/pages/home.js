@@ -23,7 +23,7 @@ export default function Home() {
         <InfoSection {...homeObjTwo}/>
         <Services />
         <InfoSection {...homeObjThree}/>
-        {/* <Footer /> */}
+        <Footer />
     </>
   )
 }

@@ -18,17 +18,17 @@ export default function HeroSection() {
                 </VideoBg>
             </HeroBg>
             <HeroContent>
-              <HeroH1>Virtual Banking Made Easy</HeroH1>
+              <HeroH1>Digital Transformation</HeroH1>
               <HeroP>
-                Contact us for an appointment today and receive 10% in credit towards your next payment.
+                Modernet works with you to create an online presence or update an existing one. 
               </HeroP>
               <HeroBtnWrapper>
-                <Button to="signup" smooth={true} onMouseEnter={onHover} onMouseLeave={onHover}
+                <Button to="services" smooth={true} onMouseEnter={onHover} onMouseLeave={onHover}
                 primary='true'
                 dark='true'
                 
                 >
-                  Get started { hover ? <ArrowForward /> : <ArrowRight /> }
+                  Learn More { hover ? <ArrowForward /> : <ArrowRight /> }
                 </Button>
               </HeroBtnWrapper>
             </HeroContent>

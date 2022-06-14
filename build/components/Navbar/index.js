@@ -3,6 +3,7 @@ import Link from 'next/link';
 import {FaBars} from 'react-icons/fa';
 
 
+
 export default function index({toggle}) {
   return (
     <>
@@ -10,7 +11,7 @@ export default function index({toggle}) {
         <NavbarContainer>
           <Link href="/" passHref>
             <NavLogo>
-            dolla
+            Modernet
             </NavLogo>
           </Link>
           <MobileIcon onClick={toggle}>
@@ -22,11 +23,11 @@ export default function index({toggle}) {
                   About
                 </NavLinks>
               </NavItem>
-              {/* <NavItem>
-                <NavLinks to="discover" smooth={true}>
-                  Discover
+              <NavItem>
+                <NavLinks to="workflow" smooth={true}>
+                  Why Us
                 </NavLinks>
-              </NavItem> */}
+              </NavItem>
               <NavItem>
                 <NavLinks to="services" smooth={true}>
                   Services
@@ -34,14 +35,14 @@ export default function index({toggle}) {
                 </NavItem>
                 <NavItem>
                 <NavLinks to="ecommerce" smooth={true}>
-                  Ecommerce
+                  E-commerce
                 </NavLinks>
               </NavItem>
             </NavMenu>
             
             <NavBtn>
-            <Link href="/signin" passHref>
-                <NavBtnLink>Sign in</NavBtnLink>
+            <Link href="/calendly" passHref>
+                <NavBtnLink>Contact Us</NavBtnLink>
             </Link>
             </NavBtn>
            

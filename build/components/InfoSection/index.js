@@ -19,7 +19,7 @@ export default function InfoSection({lightBg, id, imgStart, topLine, lightText, 
                             <Subtitle darkText={darkText}>
                                 {description}
                             </Subtitle>
-                            <BtnWrap>
+                            {/* <BtnWrap>
                                 <Button to='home' 
                                 smooth={true} 
                                 primary={primary.toString()}
@@ -31,7 +31,7 @@ export default function InfoSection({lightBg, id, imgStart, topLine, lightText, 
                                 >
                                     {buttonLabel}
                                 </Button>
-                            </BtnWrap>
+                            </BtnWrap> */}
                         </TextWrapper>
                     </Column1>
                     <Column2>

@@ -13,7 +13,7 @@ export default function HeroSection() {
     <div>
         <HeroContainer>
             <HeroBg>
-                <VideoBg autoPlay loop muted>
+                <VideoBg autoPlay loop muted playsInline>
                         <source src='/videos/modernetbackground.mp4' type='video/mp4' />
                 </VideoBg>
             </HeroBg>

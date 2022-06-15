@@ -77,7 +77,7 @@ export default function Footer() {
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
-                <SocialMedia>
+                {/* <SocialMedia>
                     <SocialMediaWrap>
                         <Link href="/">
                         <SocialLogo>
@@ -110,7 +110,7 @@ export default function Footer() {
                             </Link>
                         </SocialIcons>
                     </SocialMediaWrap>
-                </SocialMedia>
+                </SocialMedia> */}
             </FooterWrap>
         </FooterContainer>
     </>

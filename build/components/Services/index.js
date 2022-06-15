@@ -21,7 +21,7 @@ export default function Services() {
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon>
-            <Image src={Icon3} />
+            <Image src={Icon3} alt="Ecommerce svg"/>
           </ServicesIcon>
           <ServicesH2>E-Commerce</ServicesH2>
           <ServicesP>
@@ -31,7 +31,7 @@ export default function Services() {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon>
-            <Image src={Icon2} />
+            <Image src={Icon2} alt="Branded svg"/>
           </ServicesIcon>
           <ServicesH2>Branded Website</ServicesH2>
           <ServicesP>
@@ -42,7 +42,7 @@ export default function Services() {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon>
-            <Image src={Icon1} />
+            <Image src={Icon1} alt="Landing page svg"/>
           </ServicesIcon>
           <ServicesH2>Landing Page</ServicesH2>
           <ServicesP>
@@ -52,7 +52,7 @@ export default function Services() {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon>
-            <Image src={Icon4} />
+            <Image src={Icon4} alt="Redesign svg"/>
           </ServicesIcon>
           <ServicesH2>Re-design</ServicesH2>
           <ServicesP>

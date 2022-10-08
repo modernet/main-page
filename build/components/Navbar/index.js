@@ -13,7 +13,7 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import React, { useState, useEffect } from "react";
 
-export default function index({ toggle }) {
+export default function Index({ toggle }) {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {

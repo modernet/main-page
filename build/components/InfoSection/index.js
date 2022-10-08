@@ -2,7 +2,11 @@ import React from 'react'
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap } from './InfoElement'
 import {Button} from '../ButtonElement';
 
-export default function InfoSection({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) {
+const myLoader = ({src, width, quality}) => {
+    return `https://modernetconsulting.com/${src}?w=${width}&q=${quality || 75}`
+  }
+
+export default function InfoSection(props,{lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) {
   return (
     <>
         <InfoContainer lightBg={lightBg} id={id}>
@@ -36,7 +40,7 @@ export default function InfoSection({lightBg, id, imgStart, topLine, lightText, 
                     </Column1>
                     <Column2>
                     <ImgWrap>
-                    <Img src={img} alt={alt} />
+                    <Img load={myLoader} src={img} alt={alt} />
                     </ImgWrap>
                     </Column2>
                 </InfoRow>

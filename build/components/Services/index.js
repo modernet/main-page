@@ -14,14 +14,18 @@ import Icon3 from "../../public/images/ecommerce2.svg";
 import Icon4 from "../../public/images/builder.svg";
 import Image from "next/image";
 
-export default function Services() {
+const myLoader = ({src, width, quality}) => {
+  return `https://modernetconsulting.com/${src}?w=${width}&q=${quality || 75}`
+}
+
+export default function Services(props) {
   return (
     <ServicesContainer id="services">
       <ServicesH1>Our Services</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon>
-            <Image src={Icon3} />
+            <Image loader={myLoader} src={Icon3} alt="E-commerce Svg"/>
           </ServicesIcon>
           <ServicesH2>E-Commerce</ServicesH2>
           <ServicesP>
@@ -31,7 +35,7 @@ export default function Services() {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon>
-            <Image src={Icon2} />
+            <Image loader={myLoader}  src={Icon2} alt="Branded Website Svg"/>
           </ServicesIcon>
           <ServicesH2>Branded Website</ServicesH2>
           <ServicesP>
@@ -42,7 +46,7 @@ export default function Services() {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon>
-            <Image src={Icon1} />
+            <Image loader={myLoader}  src={Icon1} alt="Landing Page Svg"/>
           </ServicesIcon>
           <ServicesH2>Landing Page</ServicesH2>
           <ServicesP>
@@ -52,7 +56,7 @@ export default function Services() {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon>
-            <Image src={Icon4} />
+            <Image loader={myLoader}  src={Icon4} alt="Re-design Svg"/>
           </ServicesIcon>
           <ServicesH2>Re-design</ServicesH2>
           <ServicesP>
